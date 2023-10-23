@@ -1,0 +1,27 @@
+buildscript {
+    ext.kotlin_version = '1.6.0'
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.yanzhenjie.andserver:plugin:2.1.10'
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://oss.jfrog.org/libs-snapshot" }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

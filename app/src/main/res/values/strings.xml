@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">Screen Mirroring: Cast to TV</string>
+    <string name="title_activity_ipaddress" translatable="false">ActivityIPaddress</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="index_page" translatable="false">file:///android_asset/castweb/index.html</string>
+    <string name="Close" translatable="false">Close</string>
+    <string name="Wait" translatable="false">Wait…</string>
+    <string name="NoUrlFound" translatable="false">No Url Found in you input</string>
+    <string name="cast_photo" translatable="false">Cast Photo</string>
+
+
+    <string name="stronboarding1" translatable="false">Cast to TV &amp; Screen Mirror</string>
+    <string name="stronboarding2" translatable="false">Cast Screen From Phone to TV</string>
+    <string name="stronboarding3" translatable="false">Device Connection</string>
+
+    <string name="strsubonboarding1" translatable="false">A application that helps you control TV &amp; share pictures, video, music, the screen is easy</string>
+    <string name="strsubonboarding2" translatable="false">Share fun content with family and friends via TV screen</string>
+    <string name="strsubonboarding3" translatable="false">Connect application for device Chromecast, Roku, Xbox, Fire TV, LG TV, Samsung...</string>
+</resources>

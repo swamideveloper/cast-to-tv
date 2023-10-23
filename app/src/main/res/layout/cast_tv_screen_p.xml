@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/normal_font"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/relbtn"
+                android:layout_below="@id/cons"
+                android:orientation="vertical">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:justificationMode="inter_word"
+                            android:text="This SERVICE is provided by our Team at no cost and is intended for use as is."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:justificationMode="inter_word"
+                            android:text="This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:justificationMode="inter_word"
+                            android:text="If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:justificationMode="inter_word"
+                            android:text="The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at our Team unless otherwise defined in this Privacy Policy."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:justificationMode="inter_word"
+                            android:text="Information Collection and Use"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to our Company . The information that I request will be retained on your device and is not collected by me in any way."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to our Company . The information that I request will be retained on your device and is not collected by me in any way."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Link to privacy policy of third party service providers used by the app"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Google Play Services \nAdMob \nGoogle Analytics for Firebase \nFirebase Crashlytics \nLog Data"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilising my Service, the time and date of your use of the Service, and other statistics."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Cookies"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Service Providers"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="I may employ third-party companies and individuals due to the following reasons:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="To facilitate our Service;
+\nTo provide the Service on our behalf;
+\nTo perform Service-related services; or
+\nTo assist us in analysing how our Service is used.
+\nI want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Security"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Links to Other Sites"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Children’s Privacy"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13 years of age. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="Changes to This Privacy Policy"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:fontFamily="@font/normal_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:justificationMode="inter_word"
+                            android:text="I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page."
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/Cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:clickable="true"
+                            android:tint="@color/theme"
+                            android:src="@drawable/img_dis"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                          >
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tvText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Cancel"
+                            android:fontFamily="@font/normal_font"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/Cancel"
+                            app:layout_constraintEnd_toEndOf="@+id/Cancel"
+                            app:layout_constraintStart_toStartOf="@+id/Cancel"
+                            app:layout_constraintTop_toTopOf="@+id/Cancel" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

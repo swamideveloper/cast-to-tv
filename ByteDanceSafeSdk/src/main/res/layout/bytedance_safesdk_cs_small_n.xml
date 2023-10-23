@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainAdsCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:background="#FFB12C"
+            android:fontFamily="@font/rubik_medium"
+            android:paddingHorizontal="@dimen/_3sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:text="AD"
+            android:textColor="#fff"
+            android:textSize="@dimen/_7sdp" />
+
+        <ImageView
+            android:id="@+id/iv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/_58sdp"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_appname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:maxLines="1"
+                        android:text="My Application"
+                        android:textColor="#0A0A0A"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_app_panel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ad_stars"
+                            style="@style/cidam_CustomRatingBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="4"
+                            android:stepSize="0.1" />
+
+                        <TextView
+                            android:id="@+id/tv_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:fontFamily="@font/rubik_medium"
+                            android:text="(3.2)"
+                            android:textColor="#6E6E6E"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginVertical="@dimen/_2sdp"
+                            android:src="#6E6E6E" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/cidam_ic_download"
+                            app:tint="#6E6E6E" />
+
+                        <TextView
+                            android:id="@+id/tv_download"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/rubik_medium"
+                            android:text="10000+"
+                            android:textColor="#6E6E6E"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rubik_medium"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="Welcome to my custom appliction."
+                        android:textColor="#929292"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_4sdp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/ad_call_to_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="install"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

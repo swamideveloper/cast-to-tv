@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbackground"
+    android:orientation="vertical"
+    tools:context=".kapil_developer_act.kapil_developer_smart">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/toolbar">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mirroring"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/guide"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/guide"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/normal_font"
+                android:gravity="center"
+                android:text="Make sure your phone and cast device"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/normal_font"
+                android:gravity="center"
+                android:text="are connected to the same Wi-Fi"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_11sdp" />
+
+            <include layout="@layout/cast_tv_screen_mn" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:src="@drawable/family_img" />
+
+            <TextView
+                android:id="@+id/smartTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@drawable/cancel_back"
+
+                android:fontFamily="@font/normal_font"
+                android:gravity="center"
+                android:text="Smart TV"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/webCast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@drawable/ok_back"
+                android:fontFamily="@font/normal_font"
+                android:gravity="center"
+                android:text="Web Browser"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

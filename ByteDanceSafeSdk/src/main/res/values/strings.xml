@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="cidam_app_name">sdk</string>
+    <string name="cidam_retry">Retry Again</string>
+    <string name="cidam_connect_internet">Please Connect To Internet</string>
+    <string name="cidam_notify">notification</string>
+</resources>

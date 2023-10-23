@@ -1,0 +1,5 @@
+rootProject.name = "CastTv_AppManager_1"
+include ':app'
+include ':Connect-SDK-Android'
+include ':youtubeExtractor'
+include ':ByteDanceSafeSdk'

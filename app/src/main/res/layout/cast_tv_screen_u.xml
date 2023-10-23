@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_transparent"
+    android:padding="@dimen/_8sdp">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/videoThumbnail"
+        android:layout_width="@dimen/_58sdp"
+        android:layout_height="@dimen/_58sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/default_image"
+        android:visibility="visible"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:siRadius="@dimen/_8sdp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical"
+        app2:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toEndOf="@+id/videoThumbnail"
+        app2:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/videoViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/normal_font"
+            android:maxLines="2"
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/_10sdp"
+            app2:layout_constraintEnd_toEndOf="parent"
+            app2:layout_constraintLeft_toRightOf="@+id/cvImage"
+            app2:layout_constraintStart_toEndOf="@+id/cvImage"
+            app2:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/videoViewSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:text="SizeUnknown"
+            android:textSize="@dimen/_8sdp"
+            app2:layout_constraintLeft_toRightOf="@+id/cvImage"
+            app2:layout_constraintTop_toBottomOf="@+id/videoViewName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.5"
+        app2:layout_constraintStart_toEndOf="@+id/videoThumbnail"
+        app2:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+        <TextView
+            android:id="@+id/reviewShow"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/cromecastbtn"
+            android:fontFamily="@font/normal_font"
+            android:gravity="center"
+            android:text="Preview"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/castClick"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_weight="1"
+            android:background="@drawable/cromecastbtn"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/normal_font"
+            android:gravity="center"
+            android:text="Cast"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

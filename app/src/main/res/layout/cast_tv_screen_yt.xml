@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_8sdp"
+    android:background="@drawable/backgroundsong"
+    android:paddingBottom="@dimen/_8sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:cardElevation="0dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_6sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/videoThumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mr_cast_thumb" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/clearity"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/squre_photo2"
+        android:gravity="center"
+        android:text="1280p"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintLeft_toRightOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/songName"
+        app:layout_constraintTop_toBottomOf="@+id/songName" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/normal_font"
+        android:singleLine="true"
+        android:text="name video"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="#323232"
+        app:layout_constraintBottom_toTopOf="@+id/clearity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/mp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="mp4"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="#151515"
+        app:layout_constraintBottom_toBottomOf="@+id/clearity"
+        app:layout_constraintLeft_toRightOf="@+id/clearity"
+        app:layout_constraintStart_toEndOf="@+id/clearity"
+        app:layout_constraintTop_toTopOf="@+id/clearity" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.ScreenMirroringCastToTV" parent="Theme.Material3.DayNight.NoActionBar"></style>
+
+    <style name="Theme.ScreenMirroringCastToTV" parent="Base.Theme.ScreenMirroringCastToTV">
+        <item name="android:statusBarColor">@color/statusbar</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/dark</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="DialogeThemeAnimation">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowEnterAnimation">@anim/abc_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/abc_slide_out_bottom</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowEnterAnimation">@anim/abc_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/abc_slide_out_bottom</item>
+    </style>
+
+</resources>

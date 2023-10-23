@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.yanzhenjie.andserver'
+}
+
+android {
+    namespace 'kapil.cast.video.screenmirroring.smarttv'
+    compileSdk 33
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+    defaultConfig {
+        applicationId "kapil.cast.video.screenmirroring.smarttv"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    def lifecycle_version = "2.4.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+    implementation 'com.airbnb.android:lottie:6.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation project(':Connect-SDK-Android')
+    implementation project(':youtubeExtractor')
+
+
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    // HttpRequest
+    implementation "com.yanzhenjie.apache:httpcore:4.4.16"
+    implementation 'com.google.apis:google-api-services-drive:v3-rev110-1.23.0'
+    implementation 'com.google.guava:guava:27.0.1-android'
+    implementation('com.google.api-client:google-api-client-android:1.26.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    //websocket
+    implementation 'org.java-websocket:Java-WebSocket:1.5.3'
+    implementation 'com.google.android.gms:play-services-cast-framework:21.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.anthonycr.progress:animated-progress:1.0'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'org.jsoup:jsoup:1.7.2'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3'
+    implementation 'com.jsibbold:zoomage:1.3.1'
+    implementation 'cn.pedant.sweetalert:library:1.3'
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    implementation 'com.wonshinhyo:dragrecyclerview:1.0.5'
+    implementation 'com.github.MonsterTechnoGits:WebViewAdblock:1.1'
+    implementation 'com.facebook.fresco:fresco:2.0.0'
+
+    //AppsManager
+    implementation project(path: ':ByteDanceSafeSdk')
+    implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
+
+    implementation("com.tbuonomo:dotsindicator:4.3")
+
+
+}

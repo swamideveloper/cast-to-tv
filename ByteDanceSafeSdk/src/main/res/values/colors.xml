@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00C180</color>
+    <color name="colorAccent">#00C180</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="med_black">#353535</color>
+    <color name="grey">#838181</color>
+    <color name="med_grey">#696969</color>
+    <color name="ad_text_primary">#000000</color>
+    <color name="ad_text_secondary">#A8000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="red">#FF003C</color>
+
+    <color name="init_app_color">#00C180</color>
+
+    <color name="ads_button_color">#FF5D02</color>
+    <color name="init_app_color1">#FF5D02</color>
+</resources>

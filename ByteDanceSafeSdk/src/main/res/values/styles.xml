@@ -1,0 +1,53 @@
+<resources>
+    <!-- Base spinwin theme. -->
+
+    <style name="cidam_AdDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cidam_CustomRatingBarStyle" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressBackgroundTint">#6E6E6E</item>
+        <item name="android:progressTint">#6E6E6E</item>
+        <item name="android:secondaryProgressTint">#6E6E6E</item>
+        <item name="android:progressDrawable">@drawable/cidam_custom_ratingbar</item>
+        <item name="android:minHeight">30px</item>
+        <item name="android:maxHeight">30px</item>
+    </style>
+
+
+    <style name="cidam_AppAlertDialog">
+        <item name="android:windowBackground">#79000000</item>
+        <item name="android:windowTitleStyle">@style/cidam_TitleDialogTextStyle</item>
+        <item name="colorAccent">@color/init_app_color</item>
+        <item name="colorPrimary">@color/init_app_color</item>
+        <item name="colorPrimaryDark">@color/init_app_color</item>
+    </style>
+
+    <style name="cidam_TitleDialogTextStyle">
+        <item name="android:textColor">#0573c0</item>
+    </style>
+
+    <style name="cidam_customRoundedImageView7" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">7dp</item>
+    </style>
+
+
+    <style name="cidam_AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/cidam_RateModalStyle</item>
+    </style>
+
+    <style name="cidam_RateModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/cidam_rate_bottomsheet_round_bg</item>
+    </style>
+
+    <style name="cidam_Ad2_CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/cidam_Ad2_CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="cidam_Ad2_CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>
